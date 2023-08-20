@@ -1,0 +1,42 @@
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 10px;
+  }
+  .button {
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 8px 30px rgb(0, 0, 0, 0.12); /* taken from manuarora.in/boxshadows */
+    background: #fff;
+    color: gray;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .button:hover {
+    box-shadow: inset -12px -8px 40px #46464620; /* taken from manuarora.in/boxshadows */
+  }
+  .button:disabled {
+    box-shadow: inset -12px -8px 40px #46464620; /* taken from manuarora.in/boxshadows */
+  }
+  
+  .codeMirror {
+  border: 10px solid #a3a8af;
+  border-radius: 10px;
+  }
+  
+  .generatedText{
+    text-align: center;
+  }
+  .containerGeneratingText {
+    padding: 30px;
+    max-width:1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+   background-color: rgb(248, 240, 240);
+  }
+  
+  
