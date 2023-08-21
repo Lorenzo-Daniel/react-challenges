@@ -1,17 +1,43 @@
-.layout-container {
-    height: 100vh;
+.layout-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+@media (min-width: 320px) {
+  .layout-description {
+    background-color: black;
     display: flex;
-  }
-  
-  .layout-main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 100vw;
+    padding: 40px;
+    color: #fff;
     height: 100vh;
-    background: linear-gradient(to bottom, #5b21b6, #1e40af);
+    overflow-y: scroll;
+    z-index: 10;
+    position: absolute;
   }
-  
+  .layout-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .description-show {
+    margin: 20px 0px 0px 0px ;
+  }
+  .description-show-button{
+    padding: 10px 15px;
+    border: none;
+  }
+  .description-hide {
+    display: flex;
+    justify-content: end;
+    
+  }
+}
+
+@media (min-width: 910px) {
   .layout-description {
     background-color: black;
     display: flex;
@@ -21,42 +47,53 @@
     color: #fff;
     height: 100vh;
     overflow-y: scroll;
+    position: relative;
   }
-  
-  .layout-description h2 {
-    margin: 8px 0px;
-    font-size: 25px;
-  }
-  
-  .layout-description p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .layout-highlighted-span {
-    background-color: #071a2a;
-    border: 1px solid  #293647;
-    padding: 3px 8px;
-    border-radius: 5px;
-    margin: 15px 2px;
-  }
-  
-  .layout-description ol {
-    padding: 0px 20px;
-  }
-  
-  .layout-description ol > li {
-    padding: 0px 5px;
-    margin: 4px 0px;
-    font-size: 18px;
-    color: white;
-    line-height: 35px;
-  }
-  
-  .layout-main {
+  .layout-container {
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    flex-direction: row;
   }
-  
+  .description-show {
+    display: none;
+  }
+ 
+}
+
+.layout-description h2 {
+  margin: 8px 0px;
+  font-size: 25px;
+}
+
+.layout-description p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.layout-highlighted-span {
+  background-color: #071a2a;
+  border: 1px solid #293647;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin: 15px 2px;
+}
+
+.layout-description ol {
+  padding: 0px 20px;
+}
+
+.layout-description ol > li {
+  padding: 0px 5px;
+  margin: 4px 0px;
+  font-size: 18px;
+  color: white;
+  line-height: 35px;
+}
+
+.layout-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

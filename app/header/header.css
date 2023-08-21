@@ -2,21 +2,12 @@
   --react: #5ed3f3;
 }
 
-.header {
+.navbar {
   background-color: var(--react);
   display: flex;
   height: 80px;
   align-items: center;
-  width: 100%;
-  padding: 0px 40px;
-}
-
-.header nav {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.header nav ul {
-  list-style: none;
+  justify-content: start;
+  width: 100vw;
+  padding: 0px 10px;
 }

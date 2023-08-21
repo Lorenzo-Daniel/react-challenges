@@ -3,7 +3,7 @@
 import { javascript } from "@codemirror/lang-javascript";
 import CodeMirror from "@uiw/react-codemirror";
 import { useEffect, useState } from "react";
-import { staticCode } from "./data/sampleCode";
+import { staticCode } from "../typewriter-effect/data/sampleCode";
 import "./css/text-generate.css";
 
 function TextGenerate() {
