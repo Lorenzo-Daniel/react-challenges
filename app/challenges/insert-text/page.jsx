@@ -7,12 +7,14 @@ import { description } from "./data/descriptionData";
 function InsertText() {
   const [newText, setNewText] = useState();
   const [allText, setAllText] = useState([]);
+  const [indexText,setIndexText] = useState(-1)
 
-console.log(allText)
+console.log(indexText)
 
 
   const handleAddText = (e) => {
     if (e.key === "Enter") {
+      setIndexText(indexText + 1)
         setAllText([...allText,newText])
         setNewText('')
     }
@@ -43,7 +45,7 @@ return()=> window.removeEventListener('keydown',(e)=>handleAddText(e))
               <div className="textarea">
                 {allText.map((el, index) => {
                   return (
-                    <p key={index} className="animation">
+                    <p key={index} className={`${indexText === index ? 'animation' : ''}`}>
                       {el}
                     </p>
                   );
