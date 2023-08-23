@@ -5,6 +5,8 @@ import { description } from "./data/descriptionData";
 import Checkbox from "./Checkbox";
 import { list } from "./data/list";
 import Description from "../Description";
+
+
 function SelectCheckbox() {
   const [listItem, setListItem] = useState(
     list.map((user) => ({ ...user, isChecked: false }))

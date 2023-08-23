@@ -1,0 +1,58 @@
+@media (min-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    max-width: 450px;
+    height:auto;
+    background-color: #fdfbfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+
+  .textarea {
+    width: 100%;
+    height: auto;
+    min-height: 120px;
+    padding: 20px;
+    border: 1px solid #ebeaeb;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.textarea:focus {
+  outline: none;
+}
+.renderized-text span {
+font-size: 18px;
+margin-left: 2px;
+width: 100%;
+   
+}
+.renderized-text  {
+  width: 100%;
+  }
+
+.renderized-text p {
+  margin-top: 10px;
+  animation:animation 2s ease-in-out;
+  padding: 3px;
+  border-radius: 3px;
+  }
+
+  @keyframes animation {
+    0%{
+      background-color: rgba(58, 58, 176, 0.397);
+    }
+    100%{
+      background-color: rgb(244, 244, 249);
+    }
+  }
