@@ -1,0 +1,26 @@
+.button {
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px black;
+  cursor: pointer;
+  background-color: white;
+}
+
+.modal {
+  width: 90%;
+  max-width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px black;
+  background-color: white;
+}
+
+.overlay {
+    background-color: #828082;
+}

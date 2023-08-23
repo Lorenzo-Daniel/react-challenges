@@ -4,7 +4,7 @@ import Description from "../Description";
 import { description } from "./data/descriptionData";
 
 
-function SelectCheckbox() {
+function TypeWriterPage() {
   return (
     <div  className="layout-container">
       <Description data={description} />
@@ -13,4 +13,4 @@ function SelectCheckbox() {
   );
 }
 
-export default SelectCheckbox;
+export default TypeWriterPage;

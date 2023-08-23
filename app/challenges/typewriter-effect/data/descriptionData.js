@@ -13,8 +13,3 @@ export const description = {
     "  The text can be anything, It doesnt have to be a code snippet.",
   ],
 };
-
-// Helpful links
-
-//     Codemirror for syntax highlighted blocks in React
-//     setInterval documentation

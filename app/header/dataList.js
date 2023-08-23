@@ -4,4 +4,5 @@ export const dataList = [
   { name: "useOutsideClick", route: "use-outside-click" },
   { name: "Insert Text", route: "insert-text" },
   { name: "Multiple Filters", route: "multiple-filters" },
+  { name: "Full Screen Modal Overlay", route: "full-screen-modal-overlay" },
 ];

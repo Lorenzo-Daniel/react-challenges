@@ -3,7 +3,7 @@ import Description from "../Description";
 import { description } from "./data/descriptionData";
 import MultipleFilters from "./MultipleFilters";
 
-function SelectCheckbox() {
+function MultipleFiltersPage() {
   return (
     <div  className="layout-container">
       <Description data={description} />
@@ -12,4 +12,4 @@ function SelectCheckbox() {
   );
 }
 
-export default SelectCheckbox;
+export default MultipleFiltersPage;
