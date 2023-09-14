@@ -4,29 +4,69 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
-*{
+* {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: auto;
-    min-height: 100vh;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
   font-family: "IBM Plex Sans", sans-serif;
   background-color: rgb(248, 240, 240);
-overflow-x: hidden;
-
+  overflow-x: hidden;
 }
 
-.nav-link{
+.nav-link {
   color: white;
-font-size: 20px;
-font-weight: bold;
-padding: 10px;
-text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
 }
 
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
 
+@media (min-width: 320px) {
+  .homepage-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .homepage-title img {
+    margin-right: 10px;
+    width: 30px;
+  }
+  .homepage-description {
+    padding: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .homepage-description a {
+    margin-left: 10px;
+  }
+}
 
+@media (min-width: 600px) {
+  .homepage-title {
+    font-size: 25px;
+  }
+  .homepage-title img {
+    width: 60px;
+  }
+  .homepage-description {
+    font-size: 20px;
+  }
+}

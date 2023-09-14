@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "animate.css";
 function Modal({ setShowModal }) {
   const modalRef = useRef();
-  const [animation, setAniamtion] = useState("animate__bounceInUp");
+  const [animation, setAniamtion] = useState("animate__bounceInDown");
   const handleClickOutSide = (e) => {
     if (modalRef.current && !modalRef.current.contains(e.target)) {
       handleCloseModal();
@@ -12,7 +12,7 @@ function Modal({ setShowModal }) {
 
   let waitForEffect;
   const handleCloseModal = () => {
-    setAniamtion("animate__backOutUp");
+    setAniamtion("animate__bounceOutDown");
     waitForEffect = setTimeout(() => {
       setShowModal(false);
     }, 1000);
