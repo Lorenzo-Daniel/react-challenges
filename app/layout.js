@@ -1,4 +1,5 @@
-import Header from "./header/Header";
+import Footer from "./Layout components/Footer";
+import Header from "./Layout components/header/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -13,8 +14,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
+        <div className="flex flex-col justify-center ">
+          <Header />
+            <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
+        {/* <Header />
+        <div className="flex  w-dvw justify-between ">
         {children}
+        </div> */}
       </body>
     </html>
   );
