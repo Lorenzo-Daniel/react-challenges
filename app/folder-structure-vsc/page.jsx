@@ -25,10 +25,10 @@ function App() {
       <div className="w-lg">
         <Description data={description} />
       </div>
-      <div className="flex justify-center items-center w-dvw main-height overflow-x-scroll">
+      <div className="flex justify-center items-center w-dvw main-height overflow-x-scroll px-2">
         <div className="max-w-6xl  container flex items-center pt-20 pb-10">
           <FolderStructure files={files} setFileName={setFileName} />
-          <div className=" flex-1">
+          <div className=" flex-1 pr-2">
             <div className="">
               <div className="bg-[#2e3138] h-10 font-thin text-sm ">
                 <div

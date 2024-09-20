@@ -23,10 +23,10 @@ function Modal({ img, setShowModal, setCurrentURL }) {
     <div className="w-full h-full absolute bg-black bg-opacity-75 top-0 flex justify-center items-center">
       <div
         ref={ref}
-        className="max-w-[300px] shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+        className="max-w-[250px] md:max-w-[300px] shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mb-20"
       
       >
-        <img src={img} alt=""    onClick={()=>setShowModal(false)}/>
+        <img src={img}  alt=""  onClick={()=>setShowModal(false)}/>
         <Mosaico images={images} setCurrentURL={setCurrentURL} setShowModal={setShowModal} />
       </div>
     </div>
