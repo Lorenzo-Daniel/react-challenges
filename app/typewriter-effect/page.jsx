@@ -6,7 +6,7 @@ import { description } from "./data/descriptionData";
 
 function TypeWriterPage() {
   return (
-    <div  className="flex  main-height w-dvw mt-20"> 
+    <div  className="main-height w-dvw"> 
       <Description data={description} />
     <div className="flex flex-1 justify-center items-center">
       <TextGenerate />

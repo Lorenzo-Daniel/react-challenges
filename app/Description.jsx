@@ -6,9 +6,9 @@ function Description({ data }) {
   const [showDescription, setShowDescription] = useState(false);
 
   return (
-    <div className="h-full">
+    <div className="">
       {showDescription ? (
-        <div className="bg-black text-white h-full w-screen max-w-lg overflow-y-scroll">
+        <div className="bg-black text-white main-height w-screen max-w-lg  overflow-y-scroll">
           <div className="flex justify-start ms-2 pt-2 ">
             <button
               className="border px-2 py-1 rounded mt-1 mr-1 hover:bg-[#071a2a]  hover:border-white border-[#293647] relative text-xs"
@@ -59,7 +59,7 @@ function Description({ data }) {
           </div>
         </div>
       ) : (
-        <div className=" fixed top-[74px] left-2 w-32 text-xs ">
+        <div className=" fixed top-[72px] left-2 w-32 text-xs ">
           <button
             className="border py-1 px-2 rounded hover:bg-gray-200 "
             onClick={() => setShowDescription(true)}

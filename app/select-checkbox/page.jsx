@@ -34,7 +34,7 @@ function SelectCheckbox() {
         <Description data={description} />
         <div className="flex flex-1 justify-center items-center p-2">
           <div className=" bg-blue-200 p-10 rounded max-w-lg container divide-y">
-            <div className="select-all">
+            <div className="select-all mb-2">
               <input
                 type="checkbox"
                 name="selectAll"
@@ -43,7 +43,7 @@ function SelectCheckbox() {
               />
               <label className="ms-2 select-none ">Select All</label>
             </div>
-            <div className="checkbox-container">
+            <div className="checkbox-container pt-2">
               {listItem.map((user) => {
                 return (
                   <Checkbox

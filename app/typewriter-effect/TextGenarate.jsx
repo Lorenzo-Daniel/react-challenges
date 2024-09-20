@@ -28,8 +28,9 @@ function TextGenerate() {
   };
 
   return (
-    <div className="p-1">
-      <div className="flex gap-2 mb-2">
+    <div className="pt-20">
+
+      <div className="flex gap-2 mb-1">
         <button
           className="border rounded hover:bg-gray-200 px-2"
           disabled={textToShow.length > 0 ? true : false}
@@ -44,7 +45,7 @@ function TextGenerate() {
       <div className="container w-[320px] h-[600px] sm:w-[600px] md:w-[800px]">
         <ReactCodeMirror
           value={textToShow.toString().replace(/,/g, " ")}
-          height="500px"
+          height="400px"
           extensions={[javascript({ jsx: true })]}
           editable={false}
           theme={"dark"}
